@@ -4,7 +4,7 @@ const schema = require('./schema');
 const mongoose = require('mongoose');
 const app = express();
 
-mongoose.connect('mongodb://localhost/glg-ninja')
+mongoose.connect('mongodb://localhost/glg-ninja') // your database name
 mongoose.connection.once('open', () => {
     console.log('connection to database');
 })
